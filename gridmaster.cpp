@@ -3,7 +3,7 @@
 * The aim of this little program: To find a solution to the Einstein Grid Master game.
 *
 * The aim of the game:
-* Einstein Grid Master consists of a 100x100 grid. 
+* Einstein Grid Master consists of a 10x10 grid. 
 * Initially, the player must click a cell in the grid, in order to place the number (1)
 * From then on, the player may click to place the succeeding number (2, 3, 4, etc) in another cell as follows:
 *
