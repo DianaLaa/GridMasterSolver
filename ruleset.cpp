@@ -1,10 +1,10 @@
-#include "next.h"
+#include "ruleset.h"
 
 //////////////////////////////////////////////////////////////////
-// public class DefaultNext
+// public class DefaultRuleSet
 //////////////////////////////////////////////////////////////////
 
-int DefaultNext::NextX(unsigned int currentX, Direction direction)
+int DefaultRuleSet::NextX(unsigned int currentX, Direction direction)
 {
 	if (currentX == (unsigned int)-1)
 	{
@@ -46,7 +46,7 @@ int DefaultNext::NextX(unsigned int currentX, Direction direction)
 }
 
 
-int DefaultNext::NextY(unsigned int currentY, Direction direction)
+int DefaultRuleSet::NextY(unsigned int currentY, Direction direction)
 {
 	if (currentY == (unsigned int)-1)
 	{

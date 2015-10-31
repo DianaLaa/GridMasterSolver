@@ -5,7 +5,7 @@
 class Solver
 {
 public:
-	bool solve(int width, int height);
+	bool solve(int width, int height, IRuleSet& ruleSet);
 private:
 	bool solve(Grid& grid);
 };

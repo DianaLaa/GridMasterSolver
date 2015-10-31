@@ -15,18 +15,28 @@
 */
 
 #include "solver.h"
+#include <cstdlib>
 #include <stdio.h>
 
-int main()
+int main(int argc, char* argv[])
 {
+	int width = 0;
+	int height = 0;
+	
+	if (argc > 1)
+	{
+		width = atoi(argv[1]);
+		
+		if (argc > 2)
+		{
+			height = atoi(argv[2]);
+		}
+	}
+	
+	printf("Starting solver for grid dimensions (width: %i, height: %i)\n", width, height);
+	   
 	Solver s;
-	if (s.solve(10, 10))
-	{
-		printf("Solved!");
-	}
-	else
-	{
-		printf("No solution found...\n");
-	}
+	DefaultRuleSet ruleSet; // Solve with default game rules
+	s.solve(width, height, ruleSet);
 	return(0);
 }
